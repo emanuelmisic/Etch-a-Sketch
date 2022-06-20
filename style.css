@@ -1,0 +1,45 @@
+:root {
+    --default-border: 1px solid black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+main {
+    display: flex;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto -15em auto auto;
+    width: 15em;
+    height: 40em;
+    border: var(--default-border);
+}
+
+.btn {
+    margin: 1.5em 2em;
+    font-size: 1rem;
+}
+
+#color-picker {
+    border-radius: 50%;
+    width: 5.5em;
+    height: 5.5em;
+    align-self: center;
+}
+
+.grid-display {
+    margin: 1em auto;
+    font-size: 1.3rem;
+}
+
+.draw-board {
+    margin: auto;
+    width: 784px;
+    height: 784px;
+    border: var(--default-border);
+}
