@@ -13,23 +13,31 @@
   </body>
   <main>
     <div class="btn-container">
-      <button id="colorPicker" class="btn">Pick</button>
+      <input id="colorPicker" type="color" value="rgba(0, 0, 0, 1)" />
       <button id="draw" class="btn">Draw</button>
       <button id="erase" class="btn">Erase</button>
       <button id="rainbowPen" class="btn">Rainbow Pen</button>
-      <button id="shade" class="btn">Shade</button>
-      <button id="light" class="btn">Light</button>
-      <div class="grid-display">16 x 16</div>
+      <button id="shade" class="btn" disabled title="Coming soon...">
+        Shade
+      </button>
+      <button id="light" class="btn" disabled title="Coming soon...">
+        Light
+      </button>
+      <div class="grid-display">Grid Size: 16 x 16</div>
       <input
         type="range"
         name="board-size"
         id="boardSize"
         class="slider"
         min="2"
-        max="28"
+        max="86"
         value="16"
       />
+      <button id="clear" class="btn">Clear</button>
     </div>
     <div class="draw-board"></div>
   </main>
+  <footer>
+    <div><span>Made by Emanuel | 2022</span> <span>gh</span></div>
+  </footer>
 </html>

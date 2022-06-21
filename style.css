@@ -2,6 +2,10 @@
     --default-border: 1px solid black;
 }
 
+body {
+    background-color: rgb(236, 236, 236);
+}
+
 h1 {
     text-align: center;
     font-size: 3rem;
@@ -16,20 +20,25 @@ main {
     flex-direction: column;
     margin: auto -15em auto auto;
     width: 15em;
-    height: 40em;
+    height: 46em;
     border: var(--default-border);
 }
 
 .btn {
-    margin: 1.5em 2em;
+    margin: 1.2em 2.5em;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 #colorPicker {
-    border-radius: 50%;
+    padding: 0;
+    margin: 1.2em 2.5em;
     width: 5.5em;
     height: 5.5em;
     align-self: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
 
 .grid-display {
@@ -45,6 +54,15 @@ main {
     border: var(--default-border);
 }
 
-.pixel {
+/* .pixel {
     border: var(--default-border);
+} */
+
+.active {
+    border: 5px solid green;
+}
+
+footer {
+    margin-top: 2em;
+    text-align: center;
 }
